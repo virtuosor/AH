@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深海猎人研究所 - 官方网站</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #e0e6f1; /* Light text */
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a202c;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2d3748;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4a5568;
+        }
+
+        /* Subtle background pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 10% 20%, rgba(0, 50, 100, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
+                              radial-gradient(circle at 90% 80%, rgba(0, 50, 100, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Section styling */
+        section {
+            background-color: rgba(26, 32, 44, 0.6); /* Slightly lighter dark background with transparency */
+            backdrop-filter: blur(5px); /* Frosted glass effect */
+            border: 1px solid rgba(0, 198, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 114, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        section:hover {
+            border-color: rgba(0, 198, 255, 0.6);
+            box-shadow: 0 0 30px rgba(0, 114, 255, 0.4);
+        }
+
+        /* Organizational chart specific styles */
+        .org-level-1 {
+            background-color: #1a202c;
+            border-left: 3px solid #00c6ff;
+        }
+        .org-level-2 {
+            background-color: #2d3748;
+            border-left: 3px solid #0072ff;
+        }
+        .org-level-3 {
+            background-color: #4a5568;
+            border-left: 3px solid #667eea;
+        }
+        .org-level-4 {
+            background-color: #718096;
+            border-left: 3px solid #81e6d9;
+        }
+        .org-person {
+            color: #81e6d9;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-8 shadow-lg rounded-b-lg">
+        <div class="container flex flex-col items-center text-center">
+            <h1 class="text-5xl font-bold mb-2 tracking-wide">深海猎人研究所</h1>
+            <p class="text-xl text-blue-200">—— 抵御深渊，守护泰拉文明的最后防线 ——</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container py-12">
+        <!-- Overview Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">概述</h2>
+            <p class="text-lg leading-relaxed text-gray-200">
+                深海猎人研究所是<strong class="text-blue-400">阿戈尔</strong>文明为应对日益严峻的<strong class="text-blue-400">海嗣</strong>威胁而设立的绝密研究机构。我们致力于理解海嗣的生命机制、对抗其侵蚀，并开发能够有效抵御深海危机的特殊作战单位——<strong class="text-blue-400">深海猎人</strong>。
+            </p>
+            <p class="text-lg leading-relaxed text-gray-200 mt-4">
+                我们的工作事关泰拉大陆的命运，是抵御未知深渊侵袭的最后防线。为了应对不断升级的威胁，我们正在积极招募更多有志之士加入我们的行列。
+            </p>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">我们的使命</h2>
+            <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+                <li><strong class="text-blue-400">解析深海威胁：</strong> 深入研究海嗣的生物学、行为模式及感染特性，揭示其弱点。</li>
+                <li><strong class="text-blue-400">深海猎人项目：</strong> 通过尖端生物工程技术，改造并强化个体，使其具备在极端环境下作战的能力，成为对抗海嗣的最终兵器。</li>
+                <li><strong class="text-blue-400">文明延续：</strong> 守护阿戈尔乃至整个泰拉大陆文明的延续，确保陆地生物的生存空间不受侵蚀。</li>
+            </ul>
+        </section>
+
+        <!-- Core Figures Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">核心人物</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Urbian -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-inner border border-blue-600">
+                    <h3 class="text-3xl font-semibold mb-3 text-blue-400">乌尔比安 - 研究所负责人</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        他是一位深不可测的领导者，肩负着研究所的重任。在对抗海嗣的漫长战争中，乌尔比安以其超凡的决断力和对海嗣深入骨髓的理解，指引着研究所的前进方向。他既是科研的推动者，也是深海猎人项目的最高决策者。
+                    </p>
+                </div>
+                <!-- Brandus -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-inner border border-blue-600">
+                    <h3 class="text-3xl font-semibold mb-3 text-blue-400">布兰都斯 - 研究所顾问</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        作为研究所的重要顾问，布兰都斯以其渊博的知识和独特的视角，为研究所提供了至关重要的指导。他可能掌握着关于海嗣和深海猎人项目不为人知的秘密，其建议对于研究所的策略制定具有举足轻重的影响。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizational Structure Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">组织架构</h2>
+            <div class="space-y-4 text-gray-200">
+                <!-- 研发与医疗部 -->
+                <div class="p-4 rounded-lg org-level-1">
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-2">研发与医疗部</h3>
+                    <p class="org-person">负责人：莫丁</p>
+                    <p class="org-person">顾问：布兰都斯</p>
+                    <div class="ml-6 mt-3 space-y-3">
+                        <!-- 生态侦查科 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">生态侦查科</h4>
+                            <div class="ml-6 mt-2 space-y-2">
+                                <!-- 气象与海洋学部 -->
+                                <div class="p-2 rounded-lg org-level-3">
+                                    <h5 class="text-lg font-semibold text-blue-100 mb-1">气象与海洋学部</h5>
+                                    <p class="org-person">成员：安卡</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 医疗部 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">医疗部</h4>
+                            <div class="ml-6 mt-2 space-y-2">
+                                <!-- 急性损伤救治部 -->
+                                <div class="p-2 rounded-lg org-level-3">
+                                    <h5 class="text-lg font-semibold text-blue-100 mb-1">急性损伤救治部</h5>
+                                    <p class="org-person">成员：伊琳娜, 莫丁, 布兰都斯</p>
+                                </div>
+                                <!-- 海嗣净化中心 -->
+                                <div class="p-2 rounded-lg org-level-3">
+                                    <h5 class="text-lg font-semibold text-blue-100 mb-1">海嗣净化中心</h5>
+                                    <p class="org-person">成员：布兰都斯, 乌尔比安</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 安全部 -->
+                <div class="p-4 rounded-lg org-level-1">
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-2">安全部</h3>
+                    <div class="ml-6 mt-3 space-y-3">
+                        <!-- 情报分析与反情报科 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">情报分析与反情报科</h4>
+                            <p class="org-person">成员：伊琳娜</p>
+                        </div>
+                        <p class="org-person">成员：莫丁, 歌蕾蒂娅</p>
+                        <p class="text-lg font-semibold text-blue-200">通信科</p>
+                        <p class="text-lg font-semibold text-blue-200">维生系统</p>
+                    </div>
+                </div>
+
+                <!-- 后勤支援部 -->
+                <div class="p-4 rounded-lg org-level-1">
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-2">后勤支援部</h3>
+                    <div class="ml-6 mt-3 space-y-3">
+                        <!-- 军械科 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">军械科</h4>
+                            <p class="org-person">成员：安吉莉卡</p>
+                        </div>
+                        <p class="text-lg font-semibold text-blue-200">工程与能源科</p>
+                    </div>
+                </div>
+
+                <!-- 前线作战部 -->
+                <div class="p-4 rounded-lg org-level-1">
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-2">前线作战部</h3>
+                    <div class="ml-6 mt-3 space-y-3">
+                        <!-- 作战司令部 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">作战司令部</h4>
+                            <p class="org-person">成员：乌尔比安, 歌蕾蒂娅, 安卡, 西格蒙德, 莫丁, 布兰都斯</p>
+                        </div>
+                        <!-- 特种侦查组 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">特种侦查组</h4>
+                            <p class="org-person">成员：安卡</p>
+                        </div>
+                        <!-- 特别行动组 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">特别行动组</h4>
+                            <p class="org-person">成员：歌蕾蒂娅, 劳伦缇娜</p>
+                        </div>
+                        <!-- 强袭攻坚组 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">强袭攻坚组</h4>
+                            <p class="org-person">成员：乌尔比安, 斯卡蒂, 洛卡狄娅</p>
+                        </div>
+                        <!-- 第四小队 -->
+                        <div class="p-3 rounded-lg org-level-2">
+                            <h4 class="text-xl font-semibold text-blue-200 mb-1">深渊之刃小队 (第四小队)</h4>
+                            <p class="org-person">成员：西格蒙德, 安吉莉卡, 尤里</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 战史档案馆 -->
+                <div class="p-4 rounded-lg org-level-1">
+                    <h3 class="text-2xl font-semibold text-blue-300 mb-2">战史档案馆</h3>
+                    <div class="ml-6 mt-3 space-y-3">
+                        <p class="text-lg font-semibold text-blue-200">纪功柱</p>
+                        <p class="org-person">成员：西格蒙德</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruitment Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl text-center">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">加入我们</h2>
+            <p class="text-lg leading-relaxed text-gray-200 mb-4">
+                深海的威胁日益增长，研究所需要更多精英加入我们的行列。无论您是顶尖的科学家或者工程师、经验丰富的作战人员、卓越的分析师，还是拥有特殊天赋的个体，只要您愿意为守护阿戈尔的未来而战，我们都欢迎您的到来。
+            </p>
+            <p class="text-lg leading-relaxed text-gray-200 mb-6">
+                我们提供前沿的科研环境、专业的作战训练以及应对深海危机的独特机会。您的加入，将是文明延续的希望。
+            </p>
+            <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                了解更多或提交申请
+            </a>
+        </section>
+
+        <!-- Research Areas Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">研究领域</h2>
+            <ul class="list-disc list-inside space-y-3 text-lg text-gray-200">
+                <li><strong class="text-blue-400">生物基因工程：</strong> 针对海嗣特性的基因编辑与改造技术。</li>
+                <li><strong class="text-blue-400">深海生态学：</strong> 观测并分析深海环境与海嗣的互动模式。</li>
+                <li><strong class="text-blue-400">仿生学与机械改造：</strong> 结合生物与机械，提升作战单位的效能。</li>
+                <li><strong class="text-blue-400">源石技艺应用：</strong> 开发与海嗣相关的特殊源石技艺及其防护措施。</li>
+            </ul>
+        </section>
+
+        <!-- Deep Sea Hunter Archives Section -->
+        <section class="mb-16 p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">深海猎人档案（部分公开）</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 p-5 rounded-lg shadow-inner border border-blue-600 hover:scale-105 transition-transform duration-300">
+                    <a href="#" class="block text-blue-400 hover:underline text-xl font-semibold">斯卡蒂</a>
+                    <p class="text-gray-300 text-sm mt-2">“幽灵”一般的存在，以其强大的爆发力与压倒性的体能著称。</p>
+                </div>
+                <div class="bg-gray-900 p-5 rounded-lg shadow-inner border border-blue-600 hover:scale-105 transition-transform duration-300">
+                    <a href="#" class="block text-blue-400 hover:underline text-xl font-semibold">幽灵鲨</a>
+                    <p class="text-gray-300 text-sm mt-2">曾深陷疯狂，但其力量与生存能力不容小觑。</p>
+                </div>
+                <div class="bg-gray-900 p-5 rounded-lg shadow-inner border border-blue-600 hover:scale-105 transition-transform duration-300">
+                    <a href="#" class="block text-blue-400 hover:underline text-xl font-semibold">歌蕾蒂娅</a>
+                    <p class="text-gray-300 text-sm mt-2">严谨而冷酷的领袖，掌控深海猎人的行动。</p>
+                </div>
+                <!-- Placeholder for more archives -->
+                <div class="bg-gray-900 p-5 rounded-lg shadow-inner border border-blue-600 hover:scale-105 transition-transform duration-300">
+                    <a href="#" class="block text-blue-400 hover:underline text-xl font-semibold">更多档案...</a>
+                    <p class="text-gray-300 text-sm mt-2">（此区域内容高度机密，仅限授权人员访问）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16 p-8 rounded-xl shadow-xl text-center">
+            <h2 class="text-4xl font-bold mb-6 text-blue-300 border-b-2 border-blue-500 pb-2">联系我们</h2>
+            <p class="text-lg leading-relaxed text-gray-200 mb-4">
+                由于研究所工作的特殊性质，我们不提供公开的联系方式。
+                如果您是已授权人员或收到特别邀请，请通过以下机密渠道进行通讯。
+            </p>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-inner inline-block border border-blue-600">
+                <p class="text-xl font-mono text-blue-400">通讯协议：阿戈尔加密协议-Delta</p>
+                <p class="text-xl font-mono text-blue-400">接入点：[机密接入点地址]</p>
+                <p class="text-sm text-gray-400 mt-2">（请确保您的设备已安装正确的加密模块）</p>
+            </div>
+            <p class="text-lg leading-relaxed text-gray-200 mt-6">
+                对于招募申请，请通过您收到的邀请函上的指定方式联系我们。
+            </p>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="mb-16 p-8 bg-red-900 bg-opacity-40 rounded-xl shadow-xl border border-red-700 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-red-300 border-b-2 border-red-500 pb-2">警示</h2>
+            <p class="text-lg leading-relaxed text-red-200">
+                深海猎人研究所的研究具有高度机密性和危险性。未经授权，严禁尝试接触或传播本研究所的任何信息。
+            </p>
+            <p class="text-2xl font-bold text-red-400 mt-4">
+                深海的低语，可能比你想象的更近。
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center rounded-t-lg">
+        <div class="container">
+            <p class="text-sm">&copy; 版权所有 阿戈尔深海猎人研究所 2025</p>
+            <p class="text-xs mt-2">
+                <a href="#contact" class="hover:text-blue-400 transition-colors duration-200">机密通讯渠道</a> |
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200">访问权限协议</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
